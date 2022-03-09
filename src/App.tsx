@@ -1,18 +1,13 @@
-import { BrowserRouter as Router, Link } from 'react-router-dom';
+import { BrowserRouter as Router } from 'react-router-dom';
 import { AppRoutes } from './routes';
+import { Brand } from './components/Brand';
 
 import GlobalStyle from './styles/global';
-
-import brand from './assets/chuck-logo.png';
 
 function App() {
   return (
     <Router>
-      <h1>
-        <Link to="/">
-          <img src={brand} alt="Chuck Norris Facts" />
-        </Link>
-      </h1>
+      <Brand />      
       <AppRoutes />
       <GlobalStyle />
     </Router>

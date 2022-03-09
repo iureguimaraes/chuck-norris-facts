@@ -1,0 +1,14 @@
+{
+  "files": {
+    "main.css": "./static/css/main.01af397b.css",
+    "main.js": "./static/js/main.0fc86291.js",
+    "static/media/chuck-logo.png": "./static/media/chuck-logo.a6672c686faa3d05a03e.png",
+    "index.html": "./index.html",
+    "main.01af397b.css.map": "./static/css/main.01af397b.css.map",
+    "main.0fc86291.js.map": "./static/js/main.0fc86291.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.01af397b.css",
+    "static/js/main.0fc86291.js"
+  ]
+}
