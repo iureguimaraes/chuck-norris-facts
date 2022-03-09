@@ -1,6 +1,8 @@
 import { useEffect, useState } from "react";
 import { Link } from "react-router-dom";
 
+import { Loading } from '../../components/Loading';
+
 import { apiCall } from '../../services/api';
 
 const Home = () => {
@@ -18,6 +20,7 @@ const Home = () => {
 
   return (
     <ul>
+      { !categories.length && <Loading /> }
       {categories?.map(category => (
         <li key={category} className={category}>
           <Link to={`category/${category}`}>{category}</Link>
