@@ -1,6 +1,6 @@
 import { useCallback, useEffect, useState } from "react";
 import { Link, useParams } from "react-router-dom";
-
+import './style.scss';
 import { Loading } from '../../components/Loading';
 
 import { apiCall, Joke } from '../../services/api';

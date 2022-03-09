@@ -1,7 +1,7 @@
 import { useEffect, useState } from "react";
-import { Link } from "react-router-dom";
-
+import './style.scss';
 import { Loading } from '../../components/Loading';
+import { Circle } from "../../components/Circle";
 
 import { apiCall } from '../../services/api';
 
@@ -23,7 +23,7 @@ const Home = () => {
       { !categories.length && <Loading /> }
       {categories?.map(category => (
         <li key={category} className={category}>
-          <Link to={`category/${category}`}>{category}</Link>
+          <Circle category={category} />
         </li>
       ))}
     </ul>

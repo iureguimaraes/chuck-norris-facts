@@ -8,9 +8,11 @@ import brand from './assets/chuck-logo.png';
 function App() {
   return (
     <Router>
-      <Link to="/">
-        <img src={brand} alt="Chuck Norris Facts" />
-      </Link>
+      <h1>
+        <Link to="/">
+          <img src={brand} alt="Chuck Norris Facts" />
+        </Link>
+      </h1>
       <AppRoutes />
       <GlobalStyle />
     </Router>

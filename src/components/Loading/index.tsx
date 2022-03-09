@@ -1,12 +1,11 @@
-import React from 'react';
-import './style.scss';
+import { Loader } from './style';
 
 export const Loading = () => (
-  <div className="load-wrapp">
-    <div className="load-3">
+  <Loader>
+    <div className="loading">
       <div className="line"></div>
       <div className="line"></div>
       <div className="line"></div>
     </div>
-  </div>
+  </Loader>
 );

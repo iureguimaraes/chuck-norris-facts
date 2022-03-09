@@ -6,6 +6,7 @@ export default createGlobalStyle`
     padding: 0;
     outline: 0;
     box-sizing: border-box;
+    text-align: center;
   }
   body, #root {
     min-height: 100%;
