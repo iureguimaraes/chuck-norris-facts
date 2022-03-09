@@ -10,6 +10,7 @@ export const StyledButton = styled.button`
   border: none;
   cursor: pointer;
   box-shadow: 1px 5px 7px rgb(0 0 0 / 16%);
+  font: 600 1rem 'JetBrains Mono', monospace;
   &:hover {
     background-color: #151514;
   }

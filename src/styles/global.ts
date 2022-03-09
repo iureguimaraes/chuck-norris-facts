@@ -23,6 +23,6 @@ export default createGlobalStyle`
     background: #E3AA05;
     -webkit-font-smoothing: antialiased !important;
     color: #222;
-    font-size: 16px;
+    font: 1rem 'JetBrains Mono', monospace;
   }
 `;

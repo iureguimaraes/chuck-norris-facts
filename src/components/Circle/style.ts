@@ -18,6 +18,7 @@ export const CategoryItem = styled.div`
       background-color: #151514;
       color: white;
       transition: .4s ease-in-out;
+      text-transform: capitalize;
       &:hover {
         background-color: #10A5E3;
       }
