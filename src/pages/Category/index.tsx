@@ -1,20 +1,20 @@
-import { useEffect, useState } from "react";
+import { useCallback, useEffect, useState } from "react";
 import { Link, useParams } from "react-router-dom";
 
-import { apiCallJoke, Joke } from '../../services/api';
+import { apiCall, Joke } from '../../services/api';
 
 const Category = () => {
   const { categoryName } = useParams();
   const [joke, setJoke] = useState<Joke | null>({} as Joke);
   
-  async function getJoke() {
-    const dataRequest = await apiCallJoke(`random?category=${categoryName}`);
+  const getJoke = useCallback(async () => {
+    const dataRequest = await apiCall(`random?category=${categoryName}`);
     setJoke(dataRequest);
-  }
+  }, [categoryName]);
 
   useEffect(() => {
     getJoke()
-  }, []);
+  }, [getJoke]);
 
   return (
     <>

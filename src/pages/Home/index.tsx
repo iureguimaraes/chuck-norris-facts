@@ -1,13 +1,13 @@
 import { useEffect, useState } from "react";
 import { Link } from "react-router-dom";
 
-import { apiCallCategories } from '../../services/api';
+import { apiCall } from '../../services/api';
 
 const Home = () => {
   const [categories, setCategories] = useState<string[]>([]);
 
   async function getCategories() {
-    const dataRequest = apiCallCategories(`categories`);
+    const dataRequest = apiCall(`categories`);
     console.log(dataRequest);
     setCategories(await dataRequest);
   }
