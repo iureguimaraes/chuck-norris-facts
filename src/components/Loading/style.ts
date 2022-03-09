@@ -1,7 +1,9 @@
 import styled from "styled-components";
 
 export const Loader = styled.div`
-  margin: 20px 0;
+  min-height: 120px;
+  display: flex;
+  align-items: center;
   .loading {
     .line {
       display: inline-block;
@@ -10,6 +12,7 @@ export const Loader = styled.div`
       margin: 0 2px;
       border-radius: 15px;
       background-color: #10A5E3;
+      border: 4px solid black;
       &:nth-last-child(1) {
         animation: loading 0.6s 0.1s ease-in-out infinite;
       }

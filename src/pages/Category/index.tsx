@@ -4,6 +4,7 @@ import './style.scss';
 import { Loading } from '../../components/Loading';
 
 import { apiCall, Joke } from '../../services/api';
+import { Button } from "../../components/Button";
 
 const Category = () => {
   const { categoryName } = useParams();
@@ -21,10 +22,13 @@ const Category = () => {
 
   return (
     <>
-      {!joke && <Loading />}
-      <h2>{joke?.value}</h2>
-      <button onClick = {getJoke}>Carregar outra</button>
-      <Link to='/'>Home</Link>
+      { !joke ? <Loading /> : <h2>{joke?.value}</h2> }
+      <Button 
+        action = {getJoke} 
+        disabled = {!joke ? true : false} 
+        text = 'Load Joke'
+      />
+      <Link to='/' className="linkButton">Home</Link>
     </>
   );
 }
