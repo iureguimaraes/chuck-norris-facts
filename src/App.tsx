@@ -1,5 +1,8 @@
 import { BrowserRouter as Router, Link } from 'react-router-dom';
 import { AppRoutes } from './routes';
+
+import GlobalStyle from './styles/global';
+
 import brand from './assets/chuck-logo.png';
 
 function App() {
@@ -9,6 +12,7 @@ function App() {
         <img src={brand} alt="Chuck Norris Facts" />
       </Link>
       <AppRoutes />
+      <GlobalStyle />
     </Router>
   );
 }
